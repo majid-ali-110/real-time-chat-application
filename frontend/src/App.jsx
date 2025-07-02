@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import './index.css';
 
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
@@ -35,6 +36,10 @@ const App = () => {
 
   return (
     <div data-theme={theme}>
+      <div className="bg-blue-500 text-white text-2xl p-6 rounded-xl">
+        Tailwind CSS is working!
+      </div>
+
       <Navbar />
 
       <Routes>
@@ -49,5 +54,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
